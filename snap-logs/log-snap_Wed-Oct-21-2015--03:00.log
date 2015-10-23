@@ -1,0 +1,160 @@
+Wed-Oct-21-2015--03:00 Snap of Root vol-df1b342a
+AWS Healthwrights Server Snap taken of EBS Root Volume vol-df1b342a on Wed-Oct-21-2015--03:00 Wed-Oct-21-2015--03:00
+-------------
+current backup snapshots
+{
+    "Snapshots": [
+        {
+            "Description": "Automated backup of EBS vol-df1b342a on Tue Oct 20 03:00:04 PDT 2015 purge after Wed Oct 21 03:00:04 PDT 2015", 
+            "Tags": [
+                {
+                    "Value": "1445421604", 
+                    "Key": "PurgeAfterFE"
+                }, 
+                {
+                    "Value": "Tue-Oct-20-2015--03:00", 
+                    "Key": "Created"
+                }, 
+                {
+                    "Value": "vol-df1b342a", 
+                    "Key": "Volume"
+                }, 
+                {
+                    "Value": "true", 
+                    "Key": "PurgeAllow"
+                }, 
+                {
+                    "Value": "Tue-Oct-20-2015--03:00-HW_Server_Root-vol-df1b342a", 
+                    "Key": "Name"
+                }
+            ], 
+            "Encrypted": false, 
+            "VolumeId": "vol-df1b342a", 
+            "State": "completed", 
+            "VolumeSize": 8, 
+            "Progress": "100%", 
+            "StartTime": "2015-10-20T10:00:05.000Z", 
+            "SnapshotId": "snap-821201d9", 
+            "OwnerId": "127834124128"
+        }, 
+        {
+            "Description": "Automated backup of EBS vol-df1b342a on Mon Oct 19 03:00:04 PDT 2015 purge after Tue Oct 20 03:00:04 PDT 2015", 
+            "Tags": [
+                {
+                    "Value": "true", 
+                    "Key": "PurgeAllow"
+                }, 
+                {
+                    "Value": "Mon-Oct-19-2015--03:00", 
+                    "Key": "Created"
+                }, 
+                {
+                    "Value": "1445335204", 
+                    "Key": "PurgeAfterFE"
+                }, 
+                {
+                    "Value": "vol-df1b342a", 
+                    "Key": "Volume"
+                }, 
+                {
+                    "Value": "Mon-Oct-19-2015--03:00-HW_Server_Root-vol-df1b342a", 
+                    "Key": "Name"
+                }
+            ], 
+            "Encrypted": false, 
+            "VolumeId": "vol-df1b342a", 
+            "State": "completed", 
+            "VolumeSize": 8, 
+            "Progress": "100%", 
+            "StartTime": "2015-10-19T10:00:05.000Z", 
+            "SnapshotId": "snap-a87a15f8", 
+            "OwnerId": "127834124128"
+        }
+    ]
+}
+Wed Oct 21 03:00:04 PDT 2015
+Snapshots taken by ec2snap will be eligible for purging after the following date : Thu Oct 22 03:00:04 PDT 2015
+Automated backup of EBS vol-df1b342a on Wed Oct 21 03:00:04 PDT 2015 purge after Thu Oct 22 03:00:04 PDT 2015
+Tagging Snapshot snap-37565e67 with the following Tags:  Key=Name,Value=Wed-Oct-21-2015--03:00-HW_Server_Root-vol-df1b342a Key=PurgeAfterFE,Value=1445508004 Key=PurgeAllow,Value=true Key=Volume,Value=vol-df1b342a Key=Created,Value=Wed-Oct-21-2015--03:00
+Snapshot Purging is Starting Now.
+Snapshot "snap-a87a15f8" with the PurgeAfterFE date of "1445335204" will be deleted.
+-------------
+snapshots after adding and purging
+{
+    "Snapshots": [
+        {
+            "Description": "Automated backup of EBS vol-df1b342a on Tue Oct 20 03:00:04 PDT 2015 purge after Wed Oct 21 03:00:04 PDT 2015", 
+            "Tags": [
+                {
+                    "Value": "1445421604", 
+                    "Key": "PurgeAfterFE"
+                }, 
+                {
+                    "Value": "Tue-Oct-20-2015--03:00", 
+                    "Key": "Created"
+                }, 
+                {
+                    "Value": "vol-df1b342a", 
+                    "Key": "Volume"
+                }, 
+                {
+                    "Value": "true", 
+                    "Key": "PurgeAllow"
+                }, 
+                {
+                    "Value": "Tue-Oct-20-2015--03:00-HW_Server_Root-vol-df1b342a", 
+                    "Key": "Name"
+                }
+            ], 
+            "Encrypted": false, 
+            "VolumeId": "vol-df1b342a", 
+            "State": "completed", 
+            "VolumeSize": 8, 
+            "Progress": "100%", 
+            "StartTime": "2015-10-20T10:00:05.000Z", 
+            "SnapshotId": "snap-821201d9", 
+            "OwnerId": "127834124128"
+        }, 
+        {
+            "Description": "Automated backup of EBS vol-df1b342a on Wed Oct 21 03:00:04 PDT 2015 purge after Thu Oct 22 03:00:04 PDT 2015", 
+            "Tags": [
+                {
+                    "Value": "Wed-Oct-21-2015--03:00", 
+                    "Key": "Created"
+                }, 
+                {
+                    "Value": "Wed-Oct-21-2015--03:00-HW_Server_Root-vol-df1b342a", 
+                    "Key": "Name"
+                }, 
+                {
+                    "Value": "true", 
+                    "Key": "PurgeAllow"
+                }, 
+                {
+                    "Value": "1445508004", 
+                    "Key": "PurgeAfterFE"
+                }, 
+                {
+                    "Value": "vol-df1b342a", 
+                    "Key": "Volume"
+                }
+            ], 
+            "Encrypted": false, 
+            "VolumeId": "vol-df1b342a", 
+            "State": "pending", 
+            "VolumeSize": 8, 
+            "Progress": "0%", 
+            "StartTime": "2015-10-21T10:00:05.000Z", 
+            "SnapshotId": "snap-37565e67", 
+            "OwnerId": "127834124128"
+        }
+    ]
+}
+----------------------
+Removing logs older than 2 days
+Logs of Availabe Snaps
+total 24
+-rw-r--r-- 1 root root 4720 Oct 19 03:00 log-snap_Mon-Oct-19-2015--03:00.log
+-rw-r--r-- 1 root root 5882 Oct 20 03:00 log-snap_Tue-Oct-20-2015--03:00.log
+-rw-r--r-- 1 root root 5622 Oct 21 03:00 log-snap_Wed-Oct-21-2015--03:00.log
+-------------------

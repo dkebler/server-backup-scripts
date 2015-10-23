@@ -1,0 +1,60 @@
+--------    START DUPLICITY-BACKUP SCRIPT    --------
+
+Attempting to acquire lock /root/backup-scripts/logs/backup.lock
+successfully acquired lock.
+Local and Remote metadata are synchronized, no sync needed.
+Warning, found the following local orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following remote orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following orphaned backup file:
+[duplicity-inc.20151013T230930Z.to.20151013T232550Z.manifest, duplicity-inc.20151013T230930Z.to.20151013T232550Z.vol1.difftar.gz]
+Last full backup date: Tue Oct 13 17:04:26 2015
+--------------[ Backup Statistics ]--------------
+StartTime 1445072403.68 (Sat Oct 17 02:00:03 2015)
+EndTime 1445072452.13 (Sat Oct 17 02:00:52 2015)
+ElapsedTime 48.46 (48.46 seconds)
+SourceFiles 98862
+SourceFileSize 2556030854 (2.38 GB)
+NewFiles 15
+NewFileSize 55504 (54.2 KB)
+DeletedFiles 0
+ChangedFiles 40
+ChangedFileSize 574402852 (548 MB)
+ChangedDeltaSize 0 (0 bytes)
+DeltaEntries 55
+RawDeltaSize 9713223 (9.26 MB)
+TotalDestinationSizeChange 1907582 (1.82 MB)
+Errors 0
+
+----------------[ Duplicity Cleanup ]----------------
+Local and Remote metadata are synchronized, no sync needed.
+Warning, found the following local orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following remote orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following orphaned backup file:
+[duplicity-inc.20151013T230930Z.to.20151013T232550Z.manifest, duplicity-inc.20151013T230930Z.to.20151013T232550Z.vol1.difftar.gz]
+Last full backup date: Tue Oct 13 17:04:26 2015
+No old backup sets found, nothing deleted.
+
+Local and Remote metadata are synchronized, no sync needed.
+Warning, found the following local orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following remote orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following orphaned backup file:
+[duplicity-inc.20151013T230930Z.to.20151013T232550Z.manifest, duplicity-inc.20151013T230930Z.to.20151013T232550Z.vol1.difftar.gz]
+Last full backup date: Tue Oct 13 17:04:26 2015
+No old backup sets found, nothing deleted.
+
+-----------[ Source Disk Use Information ]-----------
+2.8G	/
+
+---------[ Destination Disk Use Information ]--------
+1595M	Amazon S3 type backend
+
+---------    END DUPLICITY-BACKUP SCRIPT    ---------
+
+Email alert sent to healthwrights@gmail.com using mailx
+Removing lock. Exit code: 0

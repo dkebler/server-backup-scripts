@@ -1,0 +1,13 @@
+# Jobs to backup cloud system plus server system files
+# Directory for scripts and this cron job.   /root/backup-scripts
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/backup-scripts
+# Testing Cron
+#* * * * * root test.sh 
+# Backup database and web site directories and sync to S3
+0 1 * * * root webs-database-backup.sh
+# Incrementally back up system partition of server to S3 server-backup - full bu every 14 days
+0 2 * * * root server-backup.sh 
+# */2 * * * * root server-backup.sh - testing
+# Take snapshot of EBS volume - Script determines how many to keep. Does daily deletes two days older
+0 3 * * * root snapshot.sh          

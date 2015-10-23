@@ -1,0 +1,106 @@
+--------    START DUPLICITY-BACKUP SCRIPT    --------
+
+Attempting to acquire lock /root/backup-scripts/logs/backup.lock
+successfully acquired lock.
+Local and Remote metadata are synchronized, no sync needed.
+Warning, found the following local orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following remote orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following orphaned backup file:
+[duplicity-inc.20151013T230930Z.to.20151013T232550Z.manifest, duplicity-inc.20151013T230930Z.to.20151013T232550Z.vol1.difftar.gz]
+Last full backup date: Tue Oct 13 17:04:26 2015
+--------------[ Backup Statistics ]--------------
+StartTime 1445418003.13 (Wed Oct 21 02:00:03 2015)
+EndTime 1445418050.81 (Wed Oct 21 02:00:50 2015)
+ElapsedTime 47.69 (47.69 seconds)
+SourceFiles 98875
+SourceFileSize 2556301140 (2.38 GB)
+NewFiles 14
+NewFileSize 53850 (52.6 KB)
+DeletedFiles 2
+ChangedFiles 35
+ChangedFileSize 574521604 (548 MB)
+ChangedDeltaSize 0 (0 bytes)
+DeltaEntries 51
+RawDeltaSize 14797918 (14.1 MB)
+TotalDestinationSizeChange 2870399 (2.74 MB)
+Errors 0
+
+----------------[ Duplicity Cleanup ]----------------
+Local and Remote metadata are synchronized, no sync needed.
+Warning, found the following local orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following remote orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following orphaned backup file:
+[duplicity-inc.20151013T230930Z.to.20151013T232550Z.manifest, duplicity-inc.20151013T230930Z.to.20151013T232550Z.vol1.difftar.gz]
+Last full backup date: Tue Oct 13 17:04:26 2015
+No old backup sets found, nothing deleted.
+
+Local and Remote metadata are synchronized, no sync needed.
+Warning, found the following local orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following remote orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following orphaned backup file:
+[duplicity-inc.20151013T230930Z.to.20151013T232550Z.manifest, duplicity-inc.20151013T230930Z.to.20151013T232550Z.vol1.difftar.gz]
+Last full backup date: Tue Oct 13 17:04:26 2015
+No old backup sets found, nothing deleted.
+
+-----------[ Source Disk Use Information ]-----------
+2.8G	/
+
+---------[ Destination Disk Use Information ]--------
+1614M	Amazon S3 type backend
+
+---------    END DUPLICITY-BACKUP SCRIPT    ---------
+
+Email alert sent to healthwrights@gmail.com using mailx
+Removing lock. Exit code: 0
+--------    START DUPLICITY-BACKUP SCRIPT    --------
+
+Attempting to acquire lock /root/backup-scripts/logs/backup.lock
+successfully acquired lock.
+Local and Remote metadata are synchronized, no sync needed.
+Warning, found the following local orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following remote orphaned signature file:
+duplicity-new-signatures.20151013T230930Z.to.20151013T232550Z.sigtar.gz
+Warning, found the following orphaned backup file:
+[duplicity-inc.20151013T230930Z.to.20151013T232550Z.manifest, duplicity-inc.20151013T230930Z.to.20151013T232550Z.vol1.difftar.gz]
+Last full backup date: Tue Oct 13 17:04:26 2015
+Collection Status
+-----------------
+Connecting with backend: BackendWrapper
+Archive dir: /root/.cache/duplicity/8f0eec62bda5976115ae4e4e6212dad4
+
+Found 0 secondary backup chains.
+
+Found primary backup chain with matching signature chain:
+-------------------------
+Chain start time: Tue Oct 13 17:04:26 2015
+Chain end time: Wed Oct 21 02:00:01 2015
+Number of contained backup sets: 10
+Total number of contained volumes: 71
+ Type of backup set:                            Time:      Num volumes:
+                Full         Tue Oct 13 17:04:26 2015                62
+         Incremental         Tue Oct 13 19:00:01 2015                 1
+         Incremental         Wed Oct 14 02:00:01 2015                 1
+         Incremental         Thu Oct 15 02:00:02 2015                 1
+         Incremental         Fri Oct 16 02:00:01 2015                 1
+         Incremental         Sat Oct 17 02:00:02 2015                 1
+         Incremental         Sun Oct 18 02:00:01 2015                 1
+         Incremental         Mon Oct 19 02:00:02 2015                 1
+         Incremental         Tue Oct 20 02:00:02 2015                 1
+         Incremental         Wed Oct 21 02:00:01 2015                 1
+-------------------------
+Also found 1 backup set not part of any chain,
+and 0 incomplete backup sets.
+These may be deleted by running duplicity with the "cleanup" command.
+---------------------    END    ---------------------
+
+---------    END DUPLICITY-BACKUP SCRIPT    ---------
+
+Email alert sent to healthwrights@gmail.com using mailx
+Removing lock. Exit code: 0
