@@ -12,7 +12,14 @@ The scripts are best loaded to a /root/backup-scripts directory on your server
 
 There is an install script makes links to the library scripts and the cron job where they need to be in order to execute.
 
-The prerequsites are installing duplicity backup and aws-cli on the server where you will put these scripts.
+The prerequisites are 
+
+
+1. http://duplicity.nongnu.org/uplicity  (try the ppa install)
+
+2. AWS-CLI 
+ 
+on the server where you will put these scripts.
 
 
 TODO:
@@ -20,3 +27,11 @@ TODO:
 Improve this documentation! (11/17/15)
 
 Have the snapshots keep also a weekly and a monthly
+
+-------------
+ 
+On the backs of giants these scripts depend on these two repos of which a local (modified) copy is found in the /bin directory.
+
+https://github.com/zertrin/duplicity-backup
+
+https://github.com/colinbjohnson/aws-missing-tools/tree/master/ec2-automate-backup
