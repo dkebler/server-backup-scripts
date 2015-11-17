@@ -12,7 +12,7 @@ MYSQL=/usr/bin/mysql
 MYSQLDUMP=/usr/bin/mysqldump
 THEBUCKET="backup.healthwrights.org"
 LOG_FILE="$BACKUP_DIR/backup-n-sync_${TIMESTAMP}.log"
-STALE="15"
+STALE="2"
 EMAILTO="healthwrights@gmail.com"
 EMAILFROM="admin-noreply<admin@healthwrights.org>"
 EMAILSUBJECT="$TIMESTAMP - Databases and Webs Backed Up and Copied to S3"
@@ -63,13 +63,12 @@ echo "Backups Before Purge"
 ls -l "$BACKUP_ROOT"
 echo -------------------
 echo "Removing backups and logs older than $STALE days"
-#find $BACKUP_DIR/* -mtime +$STALE -exec rm {} \;
+find $BACKUP_ROOT/* -iname "[0-9]*" -mtime +$STALE -exec rm -r "{}" \;
 echo "Backups After Purge"
 ls -l "$BACKUP_ROOT"
 echo -------------------
-echo "syncing db dump, system files and backup logs to S3 Bucket $THEBUCKET"
-/usr/local/bin/aws s3 sync $BACKUP_ROOT s3://$THEBUCKET/db-webs --quiet --only-show-errors --delete
-#echo "db,sys,log files synced, syncing owncloud data"
-#/usr/local/bin/aws s3 sync $DATA s3://$THEBUCKET/data --quiet --only-show-errors --delete --exclude "cache/" 
+echo "syncing db dump, system files and backup logs to S3 Bucket $THEBUCKET not using --delete"
+#using bucket lifecycle to remove older backups on S3, removed --delete from command below 
+/usr/local/bin/aws s3 sync $BACKUP_ROOT s3://$THEBUCKET/db-webs --quiet --only-show-errors 
 echo "webs synced to s3, sending email"
 cat $LOG_FILE  | mailx -s "$EMAILSUBJECT" $EMAILTO
